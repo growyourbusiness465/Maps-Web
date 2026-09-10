@@ -91,7 +91,7 @@
       } else {
         _13.disabled = false;
         _13.classList.remove("mw-loading");
-        _14.textContent = "accéder à mon dossie";
+        _14.textContent = "Accéder à mon dossier";
         _15.textContent =
           "Code d\'accès invalide. Vérifiez votre saisie ou contactez-nous.";
         _15.className = "mw-gate-msg mw-error";
