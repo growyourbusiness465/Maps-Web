@@ -1,0 +1,9 @@
+# robots.txt — MapsWeb
+# Tous les moteurs de recherche
+User-agent: *
+
+# Pages à ne pas indexer
+Disallow: /pages/
+
+# Sitemap
+Sitemap: https://www.mapsweb.com/sitemap.xml

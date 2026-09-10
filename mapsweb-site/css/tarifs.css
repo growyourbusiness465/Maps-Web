@@ -1,0 +1,395 @@
+/* ==========================================================
+   MAPSWEB — PAGE NOS FORFAITS (refonte design senior)
+   Hero + 15 forfaits double-devise €/CAD + Interac 3 étapes
+   ========================================================== */
+
+/* ---------- HERO TARIFS ---------- */
+.pricing-hero{
+  padding:88px 0 72px;
+  background:
+    radial-gradient(1000px 400px at 90% -10%, rgba(66,133,244,.10), transparent 65%),
+    radial-gradient(800px 500px at 5% 10%, rgba(52,168,83,.07), transparent 60%),
+    linear-gradient(180deg,#f8fbff 0%,#fff 100%);
+  text-align:center;
+}
+.pricing-hero .trust{
+  display:inline-flex;align-items:center;gap:12px;
+  padding:8px 16px;background:#fff;border:1px solid var(--grey-300);
+  border-radius:var(--r-pill);box-shadow:var(--sh-1);margin-bottom:24px;
+  font-size:.8125rem;color:var(--grey-700);font-weight:500;
+}
+.pricing-hero .mw-g-dots span{width:8px;height:8px}
+.pricing-hero h1{
+  font-size:clamp(2.2rem,4.5vw,3.25rem);
+  font-weight:800;line-height:1.1;letter-spacing:-.03em;
+  color:#202124;margin:0 0 20px;
+}
+.pricing-hero h1 .blue{color:var(--blue-600)}
+.pricing-hero p.lead{
+  font-size:1.125rem;color:var(--grey-700);
+  max-width:780px;margin:0 auto 28px;line-height:1.7;
+}
+.pricing-hero .guarantees{
+  display:flex;flex-wrap:wrap;justify-content:center;gap:32px;
+  margin-top:40px;padding-top:28px;border-top:1px solid var(--grey-300);
+}
+.pricing-hero .guarantee{
+  display:inline-flex;align-items:center;gap:10px;
+  font-size:.9375rem;color:#3c4043;font-weight:500;
+}
+.pricing-hero .guarantee i{
+  width:36px;height:36px;border-radius:50%;
+  background:#e6f4ea;color:#34A853;
+  display:inline-flex;align-items:center;justify-content:center;
+  font-size:.9375rem;flex-shrink:0;
+}
+.pricing-hero .guarantee .g-refund{background:#fce8e6;color:#EA4335}
+.pricing-hero .guarantee .g-price{background:#fef7e0;color:#FBBC04}
+
+/* ---------- SECTION GRILLE ---------- */
+.pricing-section{padding:88px 0;background:var(--grey-100)}
+.pricing-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:24px;
+  align-items:stretch;
+}
+
+/* ---------- CARTE DE FORFAIT ---------- */
+.mw-pricing{
+  background:#fff;border:1px solid var(--grey-300);
+  border-radius:var(--r-xl);padding:32px 28px 28px;
+  position:relative;transition:all .3s ease;
+  display:flex;flex-direction:column;height:100%;
+}
+.mw-pricing:hover{
+  transform:translateY(-6px);
+  box-shadow:var(--sh-3);
+  border-color:var(--blue-100);
+}
+.mw-pricing.popular{
+  border:2px solid var(--yellow);
+  box-shadow:0 16px 40px rgba(251,188,4,.18);
+  transform:translateY(-4px);background:linear-gradient(180deg,#fffdf5 0%,#fff 28%);
+}
+.mw-pricing.popular::before{
+  content:"⭐ Populaire";
+  position:absolute;top:-13px;left:50%;transform:translateX(-50%);
+  background:linear-gradient(135deg,#FBBC04,#F9AB00);
+  color:#202124;font-size:.6875rem;font-weight:700;
+  padding:6px 16px;border-radius:var(--r-pill);
+  white-space:nowrap;letter-spacing:.4px;
+  box-shadow:0 4px 12px rgba(251,188,4,.35);
+  display:inline-flex;align-items:center;gap:6px;
+}
+
+.mw-plan-num{
+  position:absolute;top:-14px;right:20px;
+  width:32px;height:32px;border-radius:50%;
+  background:var(--blue-600);color:#fff;
+  font-size:.9375rem;font-weight:800;
+  display:flex;align-items:center;justify-content:center;
+  box-shadow:0 4px 12px rgba(26,115,232,.35);
+  border:3px solid #fff;
+}
+.mw-pricing.popular .mw-plan-num{
+  background:#202124;
+}
+
+.mw-pricing h3{
+  font-size:1.25rem;font-weight:700;
+  margin:0 0 8px;color:#202124;letter-spacing:-.01em;
+}
+.mw-pricing .mw-chip{margin-bottom:16px}
+
+/* Prix double-devise */
+.price-row{
+  display:flex;align-items:center;gap:14px;
+  margin-bottom:4px;flex-wrap:wrap;
+  padding-bottom:16px;border-bottom:1px dashed var(--grey-300);
+}
+.price-tag{
+  font-size:2.25rem;font-weight:800;color:var(--blue-600);
+  line-height:1;display:inline-flex;align-items:baseline;
+  letter-spacing:-.03em;
+}
+.price-tag .currency{
+  font-size:1.25rem;font-weight:700;
+  margin-right:2px;vertical-align:top;
+}
+.price-tag.secondary{
+  font-size:1.375rem;font-weight:600;color:var(--grey-600);
+}
+.price-tag.secondary .currency{
+  font-size:1rem;font-weight:600;
+}
+.price-sep{
+  width:1px;height:32px;
+  background:var(--grey-400);
+  display:inline-block;
+}
+.price-sub{
+  font-size:.8125rem;color:var(--grey-600);
+  margin:8px 0 20px;font-weight:500;
+}
+
+/* Liste features */
+.mw-pricing ul{
+  list-style:none;padding:0;margin:0 0 24px;
+  flex:1;
+}
+.mw-pricing li{
+  font-size:.875rem;color:var(--grey-800);
+  padding:7px 0;
+  display:flex;align-items:flex-start;gap:10px;
+  line-height:1.5;
+}
+.mw-pricing li i{
+  color:var(--green);font-size:.6875rem;
+  margin-top:5px;flex-shrink:0;
+  width:18px;height:18px;border-radius:50%;background:#e6f4ea;
+  display:flex;align-items:center;justify-content:center;
+}
+.mw-pricing li .na{
+  color:var(--grey-400);background:var(--grey-200);
+}
+
+/* Boutons */
+.mw-pricing .btn{
+  width:100%;justify-content:center;
+  padding:12px 20px;font-size:.875rem;border-radius:var(--r-md);
+  margin-top:auto;font-weight:500;
+}
+.mw-btn-secondary{
+  background:#fff;color:var(--blue-600);border:1px solid var(--grey-400);
+}
+.mw-btn-secondary:hover{
+  background:var(--blue-50);border-color:var(--blue-600);
+  color:var(--blue-700);
+}
+
+/* ---------- INTERAC / PAIEMENT ---------- */
+.payment-section{
+  padding:96px 0;
+  background:#fff;
+}
+.payment-section .section-head{
+  text-align:center;max-width:680px;margin:0 auto 56px;
+}
+.payment-section .section-head h2{
+  font-size:clamp(1.75rem,3vw,2.5rem);font-weight:800;
+  margin:0 0 16px;color:#202124;letter-spacing:-.02em;
+}
+.payment-section .section-head p{
+  font-size:1.0625rem;color:var(--grey-700);line-height:1.7;margin:0;
+}
+.payment-steps{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:24px;
+  max-width:1080px;
+  margin:0 auto 40px;
+}
+.step-card{
+  text-align:center;
+  padding:40px 28px;
+  border:1px solid var(--grey-300);
+  border-radius:var(--r-xl);
+  background:#fff;
+  transition:all .25s;position:relative;
+}
+.step-card:hover{
+  transform:translateY(-4px);
+  box-shadow:var(--sh-2);border-color:var(--blue-100);
+}
+.step-num{
+  width:60px;height:60px;
+  border-radius:50%;
+  background:linear-gradient(135deg,#4285F4,#1A73E8);
+  color:#fff;
+  font-size:1.5rem;font-weight:800;
+  display:inline-flex;align-items:center;justify-content:center;
+  margin-bottom:20px;
+  box-shadow:0 8px 20px rgba(26,115,232,.25);
+}
+.step-card h3{
+  font-size:1.125rem;font-weight:700;
+  margin:0 0 10px;color:var(--grey-900);
+}
+.step-card p{
+  font-size:.9375rem;color:var(--grey-700);line-height:1.65;margin:0;
+}
+.payment-secure{
+  text-align:center;
+  font-size:.875rem;color:var(--grey-600);
+  margin-top:28px;
+  display:inline-flex;align-items:center;gap:8px;
+  justify-content:center;width:100%;
+}
+.payment-secure i{color:var(--green);font-size:1rem}
+
+.payment-interac-box{
+  max-width:440px;
+  margin:48px auto 0;
+  text-align:center;
+  padding:44px 32px;
+  border-radius:var(--r-2xl);
+  background:linear-gradient(135deg,#fff 0%,#f8fbff 100%);
+  border:1px solid var(--blue-100);
+  box-shadow:var(--sh-2);position:relative;overflow:hidden;
+}
+.payment-interac-box::before{
+  content:"";position:absolute;top:-60px;right:-60px;width:140px;height:140px;
+  background:radial-gradient(circle,rgba(66,133,244,.12),transparent 70%);border-radius:50%;
+}
+.payment-interac-box .interac-icons{
+  display:flex;justify-content:center;gap:20px;
+  font-size:2.75rem;margin-bottom:20px;color:var(--blue-600);
+  position:relative;
+}
+.payment-interac-box h3{
+  font-size:1.25rem;font-weight:700;margin-bottom:10px;position:relative;
+}
+.payment-interac-box p{
+  font-size:.9375rem;color:var(--grey-700);margin-bottom:24px;line-height:1.6;position:relative;
+}
+.payment-interac-box .btn{width:100%;justify-content:center;position:relative}
+
+/* ---------- CTA FINAL ---------- */
+.cta-banner{
+  padding:96px 0;
+  background:linear-gradient(135deg, #4285F4 0%, #1a73e8 55%, #1557b0 100%);
+  color:#fff;
+  text-align:center;
+  position:relative;overflow:hidden;
+}
+.cta-banner::before{
+  content:"";position:absolute;top:-150px;right:-150px;width:360px;height:360px;
+  background:radial-gradient(circle,rgba(255,255,255,.15),transparent 65%);border-radius:50%;
+}
+.cta-banner::after{
+  content:"";position:absolute;bottom:-120px;left:-120px;width:280px;height:280px;
+  background:radial-gradient(circle,rgba(52,168,83,.22),transparent 65%);border-radius:50%;
+}
+.cta-banner .container{position:relative;z-index:1}
+.cta-banner h2{
+  color:#fff;
+  font-size:clamp(1.75rem,3vw,2.5rem);
+  font-weight:800;
+  margin:0 0 16px;letter-spacing:-.02em;
+}
+.cta-banner p{
+  color:rgba(255,255,255,.92);
+  font-size:1.0625rem;
+  max-width:640px;
+  margin:0 auto 32px;
+  line-height:1.65;
+}
+.mw-btn-cta-white{
+  background:#fff;color:var(--blue-600);font-weight:600;
+  padding:14px 28px;border-radius:var(--r-lg);font-size:1rem;
+  display:inline-flex;gap:8px;align-items:center;
+  box-shadow:0 6px 16px rgba(0,0,0,.15);
+  transition:.2s;
+  text-decoration:none;
+}
+.mw-btn-cta-white:hover{
+  transform:translateY(-2px);
+  box-shadow:0 10px 24px rgba(0,0,0,.2);
+  background:#f8f9fa;color:var(--blue-700);
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width:1024px){
+  .pricing-grid{grid-template-columns:repeat(2,1fr)}
+  .payment-steps{grid-template-columns:1fr;max-width:440px}
+  .mw-pricing.popular{transform:none}
+}
+@media (max-width:640px){
+  .pricing-hero{padding:64px 0 48px}
+  .pricing-hero .guarantees{gap:16px;flex-direction:column;align-items:flex-start;max-width:320px;margin-left:auto;margin-right:auto}
+  .pricing-grid{grid-template-columns:1fr}
+  .pricing-section{padding:56px 0}
+  .payment-section{padding:64px 0}
+  .cta-banner{padding:64px 0}
+  .price-tag{font-size:2rem}
+  .price-tag.secondary{font-size:1.25rem}
+  .price-sep{display:none}
+  .price-row{gap:8px}
+}
+
+/* ---------- FENÊTRE COORDONNÉES INTERAC ---------- */
+.mw-modal-overlay{
+  position:fixed;inset:0;z-index:99999;
+  background:rgba(32,33,36,.55);
+  display:flex;align-items:center;justify-content:center;
+  padding:20px;
+  opacity:0;visibility:hidden;
+  transition:opacity .2s ease;
+}
+.mw-modal-overlay.open{
+  opacity:1;visibility:visible;
+}
+.mw-modal-card{
+  background:#fff;border-radius:20px;
+  max-width:440px;width:100%;
+  padding:32px 28px 28px;
+  position:relative;
+  box-shadow:0 24px 70px rgba(0,0,0,.3);
+  transform:translateY(16px) scale(.98);
+  transition:transform .25s ease;
+}
+.mw-modal-overlay.open .mw-modal-card{
+  transform:translateY(0) scale(1);
+}
+.mw-modal-close{
+  position:absolute;top:16px;right:16px;
+  width:32px;height:32px;border-radius:50%;
+  border:none;background:var(--grey-100);color:var(--grey-700);
+  display:flex;align-items:center;justify-content:center;
+  cursor:pointer;font-size:.875rem;
+  transition:background .15s;
+}
+.mw-modal-close:hover{background:var(--grey-200)}
+.mw-modal-icon{
+  width:56px;height:56px;border-radius:50%;
+  background:var(--blue-50,#e8f0fe);color:var(--blue-600);
+  display:flex;align-items:center;justify-content:center;
+  font-size:1.375rem;margin-bottom:16px;
+}
+.mw-modal-card h3{
+  font-size:1.25rem;font-weight:800;margin:0 0 8px;color:#202124;
+}
+.mw-modal-sub{
+  font-size:.875rem;color:var(--grey-700);line-height:1.5;margin:0 0 20px;
+}
+.mw-modal-field{margin-bottom:14px}
+.mw-modal-label{
+  display:block;font-size:.75rem;font-weight:700;
+  text-transform:uppercase;letter-spacing:.4px;
+  color:var(--grey-600);margin-bottom:6px;
+}
+.mw-modal-value-row{
+  display:flex;align-items:center;gap:8px;
+  background:var(--grey-100);border:1px solid var(--grey-300);
+  border-radius:10px;padding:10px 12px;
+}
+.mw-modal-value{
+  flex:1;font-size:.9375rem;font-weight:600;color:#202124;
+  word-break:break-all;
+}
+.mw-copy-btn{
+  flex-shrink:0;width:32px;height:32px;border-radius:8px;
+  border:none;background:#fff;color:var(--blue-600);
+  display:flex;align-items:center;justify-content:center;
+  cursor:pointer;border:1px solid var(--grey-300);
+  transition:background .15s;
+}
+.mw-copy-btn:hover{background:var(--blue-50,#e8f0fe)}
+.mw-modal-note{
+  display:flex;gap:10px;align-items:flex-start;
+  background:#E6F4EA;border-radius:12px;padding:14px 16px;
+  margin:18px 0 22px;
+}
+.mw-modal-note i{color:var(--green);margin-top:3px;flex-shrink:0}
+.mw-modal-note p{margin:0;font-size:.8125rem;line-height:1.5;color:#1e4620}

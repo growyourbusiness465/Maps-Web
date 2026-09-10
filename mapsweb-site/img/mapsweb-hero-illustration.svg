@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1408 768">
+  <defs>
+    <linearGradient id="mapGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#E8F0FE"/>
+      <stop offset="100%" stop-color="#D2E3FC"/>
+    </linearGradient>
+    <linearGradient id="phoneScreenGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#F1F3F4"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Fond -->
+  <ellipse cx="720" cy="400" rx="620" ry="330" fill="#EAF1FE"/>
+  <ellipse cx="704" cy="660" rx="430" ry="34" fill="#DCE6F7"/>
+
+  <!-- Éléments flottants décoratifs -->
+  <g opacity="0.9">
+    <circle cx="220" cy="150" r="20" fill="#FBBC04"/>
+    <circle cx="1250" cy="200" r="14" fill="#34A853"/>
+    <circle cx="1180" cy="600" r="18" fill="#EA4335"/>
+    <circle cx="180" cy="560" r="12" fill="#1a73e8"/>
+  </g>
+
+  <!-- ===================== LAPTOP ===================== -->
+  <g>
+    <!-- Base du laptop -->
+    <path d="M330 560 L980 560 L1010 610 L300 610 Z" fill="#C7CDD6"/>
+    <rect x="300" y="605" width="710" height="10" rx="4" fill="#AAB2BE"/>
+
+    <!-- Écran -->
+    <rect x="360" y="240" width="590" height="330" rx="16" fill="#3C4043"/>
+    <rect x="378" y="258" width="554" height="284" rx="4" fill="url(#mapGrad)"/>
+
+    <!-- Routes sur la carte -->
+    <g stroke="#FFFFFF" stroke-width="6" opacity="0.8">
+      <line x1="378" y1="360" x2="932" y2="330"/>
+      <line x1="500" y1="258" x2="560" y2="542"/>
+      <line x1="378" y1="460" x2="932" y2="480"/>
+      <line x1="760" y1="258" x2="700" y2="542"/>
+    </g>
+
+    <!-- Blocs "bâtiments" discrets -->
+    <g fill="#BFD8FA">
+      <rect x="600" y="380" width="46" height="34" rx="4"/>
+      <rect x="470" y="440" width="38" height="28" rx="4"/>
+      <rect x="780" y="400" width="42" height="30" rx="4"/>
+    </g>
+
+    <!-- Ondes radar autour du pin -->
+    <circle cx="655" cy="400" r="70" fill="none" stroke="#EA4335" stroke-width="2" opacity="0.25"/>
+    <circle cx="655" cy="400" r="45" fill="none" stroke="#EA4335" stroke-width="2" opacity="0.35"/>
+
+    <!-- Ombre du pin -->
+    <ellipse cx="655" cy="452" rx="16" ry="5" fill="#00000022"/>
+
+    <!-- Pin Google Maps -->
+    <path d="M655 358c-19.9 0-36 16.1-36 36 0 27 36 62 36 62s36-35 36-62c0-19.9-16.1-36-36-36z" fill="#EA4335"/>
+    <circle cx="655" cy="394" r="15" fill="#FFFFFF"/>
+
+    <!-- Badge étoiles sous la carte, dans l'écran -->
+    <g transform="translate(700,500)">
+      <rect x="0" y="0" width="150" height="34" rx="17" fill="#FFFFFF"/>
+      <g fill="#FBBC04" font-family="Arial, sans-serif" font-size="16">
+        <text x="14" y="23">★★★★★</text>
+      </g>
+      <text x="112" y="23" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#5F6368">4.9</text>
+    </g>
+  </g>
+
+  <!-- ===================== CLAVIER (base laptop) ===================== -->
+  <g>
+    <rect x="378" y="558" width="554" height="10" rx="3" fill="#DADCE0"/>
+  </g>
+
+  <!-- ===================== SMARTPHONE ===================== -->
+  <g transform="translate(1000,300) rotate(8)">
+    <rect x="0" y="0" width="180" height="330" rx="26" fill="#202124"/>
+    <rect x="10" y="14" width="160" height="302" rx="16" fill="url(#phoneScreenGrad)"/>
+
+    <!-- En-tête profil -->
+    <circle cx="46" cy="52" r="20" fill="#1a73e8"/>
+    <rect x="76" y="40" width="80" height="10" rx="5" fill="#3C4043"/>
+    <rect x="76" y="56" width="60" height="8" rx="4" fill="#9AA0A6"/>
+
+    <!-- Badge "Ouvert" -->
+    <rect x="20" y="82" width="72" height="24" rx="12" fill="#E6F4EA"/>
+    <circle cx="34" cy="94" r="5" fill="#34A853"/>
+    <text x="46" y="99" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#188038">Ouvert</text>
+
+    <!-- Photo établissement -->
+    <rect x="20" y="118" width="140" height="80" rx="10" fill="#D2E3FC"/>
+    <path d="M50 178 L80 148 L100 168 L130 138 L150 178 Z" fill="#8AB4F8"/>
+    <circle cx="60" cy="140" r="9" fill="#FBBC04"/>
+
+    <!-- Étoiles avis -->
+    <g fill="#FBBC04" font-family="Arial, sans-serif" font-size="16">
+      <text x="20" y="222">★★★★★</text>
+    </g>
+    <text x="118" y="222" font-family="Arial, sans-serif" font-size="12" fill="#5F6368">(238)</text>
+
+    <!-- Lignes d'infos -->
+    <rect x="20" y="240" width="120" height="8" rx="4" fill="#E0E0E0"/>
+    <rect x="20" y="256" width="90" height="8" rx="4" fill="#E0E0E0"/>
+
+    <!-- Bouton call-to-action -->
+    <rect x="20" y="278" width="140" height="32" rx="16" fill="#1a73e8"/>
+    <text x="90" y="299" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="middle">Itinéraire</text>
+  </g>
+
+  <!-- ===================== BADGE CROISSANCE ===================== -->
+  <g transform="translate(240,470)">
+    <rect x="0" y="0" width="150" height="110" rx="18" fill="#FFFFFF" stroke="#E8EAED" stroke-width="2"/>
+    <g transform="translate(20,60)">
+      <rect x="0" y="10" width="16" height="26" rx="3" fill="#BFD8FA"/>
+      <rect x="24" y="0" width="16" height="36" rx="3" fill="#8AB4F8"/>
+      <rect x="48" y="-16" width="16" height="52" rx="3" fill="#1a73e8"/>
+    </g>
+    <path d="M20 40 L44 12 L68 24 L98 -14" stroke="#34A853" stroke-width="4" fill="none" stroke-linecap="round"/>
+    <path d="M88 -18 L100 -16 L98 -4" stroke="#34A853" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="20" y="30" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#188038">Visibilité +150%</text>
+  </g>
+
+  <!-- ===================== PIN FLOTTANT + BULLE CHECK ===================== -->
+  <g transform="translate(1180,470)">
+    <circle cx="30" cy="30" r="30" fill="#FFFFFF" stroke="#E8EAED" stroke-width="2"/>
+    <circle cx="30" cy="30" r="20" fill="#34A853"/>
+    <path d="M20 30 L27 37 L41 22" stroke="#FFFFFF" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

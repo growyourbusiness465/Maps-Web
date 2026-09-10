@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — MapsWeb</title>
+<link rel="icon" type="image/svg+xml" href="../img/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="../img/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../img/favicon-16.png">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="shortcut icon" href="../img/favicon.ico">
+<meta name="description" content="Contactez les experts MapsWeb pour un audit gratuit.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Material+Icons&family=Material+Icons+Outlined&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="../css/mapsweb.css">
+<link rel="stylesheet" href="../css/header-footer.css">
+
+</head>
+<body>
+
+<header class="mw-header">
+  <div class="mw-container mw-header-row">
+    <a href="../index.html" class="mw-brand" aria-label="MapsWeb - Accueil">
+      <span class="mw-brand-logo"><img src="../img/mapsweb-logo-google.png" alt="MapsWeb"></span>
+      <span class="mw-verified-badge"><i class="fa-solid fa-circle-check"></i> Google Business Verified Agency</span>
+    </a>
+    <nav class="mw-nav" aria-label="Menu principal">
+      <ul class="mw-menu" id="mw-main-menu">
+        <li><a href="../index.html">Accueil</a></li>
+        <li><a href="a-propos.html">À propos</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="verified.html">MapsWeb Verified</a></li>
+        <li><a href="tarifs.html">Nos Forfaits</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="mw-header-right">
+      <a href="contact.html" class="btn btn-primary btn-sm">Demander mon audit gratuit</a>
+      <button class="mw-burger" id="mw-burger" aria-label="Ouvrir le menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<section class="inner-hero">
+  <div class="container-narrow">
+    <span class="g-dots"><span></span><span></span><span></span><span></span></span>
+    <h1>Parlons de votre <span class="text-blue">projet</span></h1>
+    <p class="lead">Un expert certifié Google Business Profile vous répond sous 24h ouvrées. Appel, email, WhatsApp : choisissez le canal qui vous convient.</p>
+  </div>
+</section>
+
+<section class="contact-section">
+  <div class="container">
+    <div class="contact-grid">
+      <div>
+        <div class="contact-details">
+          <div class="c-item"><i class="fa-solid fa-phone"></i><div><b>Téléphone</b><a href="tel:+14503904889">+14503904889</a></div></div>
+          <div class="c-item"><i class="fa-solid fa-envelope"></i><div><b>Email</b><a href="mailto:mapswebltd@gmail.com">mapswebltd@gmail.com</a></div></div>
+          <div class="c-item"><i class="fa-brands fa-whatsapp"></i><div><b>WhatsApp</b><a href="https://wa.me/14503904889" target="_blank" rel="noopener">Discussion instantanée</a></div></div>
+          <div class="c-item"><i class="fa-solid fa-location-dot"></i><div><b>Zone d'intervention</b><span>Québec (Canada)</span></div></div>
+          <div class="c-item"><i class="fa-solid fa-clock"></i><div><b>Horaires</b><span>Lundi au Vendredi · 9h – 18h</span></div></div>
+        </div>
+        <div class="contact-social">
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+      </div>
+      <div class="contact-form-wrap">
+        <h3>Demandez votre <span class="text-blue">audit gratuit</span></h3>
+        <p style="color:var(--grey-700);margin-bottom:24px">Remplissez le formulaire, nous revenons vers vous sous 24h avec un rapport personnalisé.</p>
+        <form class="contact-form" id="mw-contact-form" action="https://formsubmit.co/localmapltd@gmail.com" method="POST">
+          <input type="hidden" name="_subject" value="Nouvelle demande depuis le site MapsWeb">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_url" id="mw-contact-url" value="">
+          <div class="form-row">
+            <div class="form-group"><label>Prénom *</label><input type="text" name="Prénom" required placeholder="Jean"></div>
+            <div class="form-group"><label>Nom *</label><input type="text" name="Nom" required placeholder="Dupont"></div>
+          </div>
+          <div class="form-row">
+            <div class="form-group"><label>Email *</label><input type="email" name="Email" required placeholder="jean@entreprise.ca"></div>
+            <div class="form-group"><label>Téléphone</label><input type="tel" name="Téléphone" placeholder="+1 ..."></div>
+          </div>
+          <div class="form-group"><label>Site web / lien fiche Google</label><input type="url" name="Site web" placeholder="https://g.page/..."></div>
+          <div class="form-group"><label>Service qui vous intéresse</label>
+            <select name="Service">
+              <option>Audit gratuit de ma fiche</option>
+              <option>Vérification de fiche Google</option>
+              <option>Fiche Google suspendue</option>
+              <option>Optimisation SEO local</option>
+              <option>Création de site web</option>
+              <option>Programme MapsWeb Verified</option>
+              <option>Autre</option>
+            </select>
+          </div>
+          <div class="form-group"><label>Votre message *</label><textarea name="Message" rows="4" required placeholder="Décrivez votre besoin en quelques lignes..."></textarea></div>
+          <label class="form-check"><input type="checkbox" required> J'accepte d'être recontacté par MapsWeb.</label>
+          <button type="submit" class="btn btn-primary btn-lg btn-block"><i class="fa-solid fa-paper-plane"></i> Envoyer ma demande</button>
+        </form>
+        <div id="mw-contact-success" class="card" style="display:none;text-align:center;padding:32px">
+          <i class="fa-solid fa-circle-check" style="font-size:2rem;color:var(--green-600,#188038);margin-bottom:10px;display:block"></i>
+          <strong>Merci !</strong> Votre demande a bien été envoyée. Nous vous répondrons sous 24h ouvrées.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="mw-footer">
+  <div class="mw-f-top">
+    <div class="mw-container mw-f-top-row">
+      <span>Expert certifié Google Business Profile — Canada</span>
+      <span class="mw-f-top-social">
+        <a href="https://wa.me/14503904889" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+      </span>
+    </div>
+  </div>
+  <div class="mw-f-main">
+    <div class="mw-container mw-f-grid">
+      <div class="mw-f-col">
+        <h4>À propos de MapsWeb</h4>
+        <p style="font-size:.875rem;color:#5f6368;line-height:1.7">Agence spécialisée dans l'optimisation Google Business Profile, la récupération de fiches suspendues et le SEO local.</p>
+        <ul>
+          <li><a href="a-propos.html">Qui sommes-nous ?</a></li>
+          <li><a href="verified.html">Programme MapsWeb Verified</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="mw-f-col">
+        <h4>Produits &amp; Services</h4>
+        <div class="mw-f-col-split">
+          <ul>
+            <li><a href="services.html#verification">Vérification fiche Google</a></li>
+            <li><a href="services.html#suspendue">Réactiver fiche suspendue</a></li>
+            <li><a href="services.html#seo">Optimisation SEO local</a></li>
+            <li><a href="services.html#site">Création de site web</a></li>
+          </ul>
+          <ul>
+            <li><a href="verified.html">MapsWeb Verified</a></li>
+            <li><a href="tarifs.html">Tous les forfaits</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html">Support</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="mw-f-col">
+        <h4>Contact</h4>
+        <div class="contact-list">
+          <a href="tel:+14503904889"><i class="fa-solid fa-phone"></i> +14503904889</a>
+          <a href="mailto:mapswebltd@gmail.com"><i class="fa-solid fa-envelope"></i> mapswebltd@gmail.com</a>
+          <a href="#"><i class="fa-solid fa-location-dot"></i> Canada</a>
+          <a href="https://wa.me/14503904889" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="mw-f-bottom">
+    <div class="mw-container mw-f-bottom-row">
+      <div class="mw-f-brand">
+        <img src="../img/mapsweb-logo-google.png" alt="MapsWeb">
+        <p>© 2026 MapsWeb — Tous droits réservés</p>
+      </div>
+      <div class="mw-f-links">
+        <a href="#">Confidentialité</a>
+        <a href="#">Conditions</a>
+        <a href="#">Mentions légales</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div class="cookies_sec" id="mw-cookie">
+  <p><b>🍪 Cookies</b> — Nous utilisons des cookies pour améliorer votre expérience et mesurer l'audience.</p>
+  <button class="btn btn-primary btn-sm" id="mw-cookie-accept">J'accepte</button>
+</div>
+
+<script src="../js/mapsweb.js" defer></script>
+<script>
+document.addEventListener('DOMContentLoaded',function(){
+  var b=document.getElementById('mw-burger'),n=document.querySelector('.mw-nav');
+  if(b&&n)b.addEventListener('click',function(){var o=n.classList.toggle('open');b.classList.toggle('open',o);});
+
+  var form = document.getElementById('mw-contact-form');
+  if (form) {
+    var urlField = document.getElementById('mw-contact-url');
+    if (urlField) urlField.value = window.location.href;
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var btn = form.querySelector('button[type="submit"]');
+      var originalLabel = btn.innerHTML;
+      btn.disabled = true;
+      btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Envoi en cours...';
+
+      fetch(form.action, {
+        method: 'POST',
+        body: new FormData(form),
+        headers: { 'Accept': 'application/json' }
+      }).then(function (res) {
+        if (res.ok) {
+          form.style.display = 'none';
+          document.getElementById('mw-contact-success').style.display = 'block';
+        } else {
+          throw new Error('Réponse serveur invalide');
+        }
+      }).catch(function () {
+        alert('Une erreur est survenue lors de l\'envoi. Réessayez, ou écrivez-nous directement à mapswebltd@gmail.com.');
+        btn.disabled = false;
+        btn.innerHTML = originalLabel;
+      });
+    });
+  }
+});
+</script>
+<script src="../js/social-proof-data.js"></script>
+<script src="../js/social-proof.js"></script>
+<script src="../js/access-gate.js"></script>
+<button id="mw-back-to-top" class="mw-back-to-top" aria-label="Retour en haut"><i class="fa-solid fa-chevron-up"></i></button>
+</body></html>

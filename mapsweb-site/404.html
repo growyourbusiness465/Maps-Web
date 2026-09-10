@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Page introuvable — MapsWeb</title>
+<link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16.png">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<link rel="shortcut icon" href="img/favicon.ico">
+<meta name="description" content="La page que vous cherchez est introuvable. Retournez à l'accueil de MapsWeb.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Material+Icons&family=Material+Icons+Outlined&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="css/mapsweb.css">
+<link rel="stylesheet" href="css/header-footer.css">
+<style>
+  /* ---------- PAGE 404 ---------- */
+  .error-404 {
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 96px 24px;
+    background:
+      radial-gradient(1000px 500px at 90% 0%, rgba(66,133,244,.10), transparent 65%),
+      radial-gradient(700px 400px at 0% 80%, rgba(52,168,83,.07), transparent 60%),
+      linear-gradient(180deg,#f8fbff 0%,#fff 100%);
+  }
+  .error-404 .error-code {
+    font-size: clamp(6rem, 20vw, 12rem);
+    font-weight: 900;
+    line-height: 1;
+    letter-spacing: -0.05em;
+    background: linear-gradient(135deg, #4285F4 0%, #1a73e8 55%, #34A853 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 8px;
+  }
+  .error-404 h1 {
+    font-size: clamp(1.5rem, 4vw, 2.25rem);
+    font-weight: 700;
+    color: #202124;
+    margin-bottom: 16px;
+    letter-spacing: -0.02em;
+  }
+  .error-404 p.lead {
+    font-size: 1.0625rem;
+    color: #5f6368;
+    line-height: 1.7;
+    max-width: 520px;
+    margin: 0 auto 32px;
+  }
+  .error-404 .error-actions {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .error-404 .error-links {
+    margin-top: 48px;
+    padding-top: 32px;
+    border-top: 1px solid #e8eaed;
+    max-width: 520px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .error-404 .error-links h2 {
+    font-size: 0.875rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    color: #5f6368;
+    margin-bottom: 16px;
+  }
+  .error-404 .error-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 24px;
+    justify-content: center;
+  }
+  .error-404 .error-links a {
+    color: #1a73e8;
+    text-decoration: none;
+    font-size: 0.9375rem;
+    font-weight: 500;
+    transition: color 0.2s;
+  }
+  .error-404 .error-links a:hover {
+    color: #174ea6;
+    text-decoration: underline;
+  }
+  @media (max-width: 480px) {
+    .error-404 .error-actions {
+      flex-direction: column;
+      align-items: stretch;
+    }
+    .error-404 .error-actions .btn {
+      width: 100%;
+    }
+  }
+</style>
+</head>
+<body>
+
+<header class="mw-header">
+  <div class="mw-container mw-header-row">
+    <a href="index.html" class="mw-brand" aria-label="MapsWeb - Accueil">
+      <span class="mw-brand-logo"><img src="img/mapsweb-logo-google.png" alt="MapsWeb"></span>
+      <span class="mw-verified-badge"><i class="fa-solid fa-circle-check"></i> Google Business Verified Agency</span>
+    </a>
+    <nav class="mw-nav" aria-label="Menu principal">
+      <ul class="mw-menu" id="mw-main-menu">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="pages/a-propos.html">À propos</a></li>
+        <li><a href="pages/services.html">Services</a></li>
+        <li><a href="pages/verified.html">MapsWeb Verified</a></li>
+        <li><a href="pages/tarifs.html">Nos Forfaits</a></li>
+        <li><a href="pages/contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="mw-header-right">
+      <a href="pages/contact.html" class="btn btn-primary btn-sm">Demander mon audit gratuit</a>
+      <button class="mw-burger" id="mw-burger" aria-label="Ouvrir le menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<section class="error-404">
+  <div class="container">
+    <div class="error-code">404</div>
+    <h1>Oups ! Page introuvable</h1>
+    <p class="lead">La page que vous recherchez a peut-être été déplacée ou n'existe plus. Pas de panique, nos experts sont là pour vous guider.</p>
+    <div class="error-actions">
+      <a href="index.html" class="btn btn-primary btn-lg"><i class="fa-solid fa-house"></i> Retour à l'accueil</a>
+      <a href="pages/contact.html" class="btn btn-secondary btn-lg"><i class="fa-solid fa-envelope"></i> Nous contacter</a>
+    </div>
+    <div class="error-links">
+      <h2>Pages populaires</h2>
+      <ul>
+        <li><a href="pages/services.html">Nos services</a></li>
+        <li><a href="pages/tarifs.html">Nos forfaits</a></li>
+        <li><a href="pages/verified.html">MapsWeb Verified</a></li>
+        <li><a href="pages/faq.html">FAQ</a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<footer class="mw-footer">
+  <div class="mw-f-top">
+    <div class="mw-container mw-f-top-row">
+      <span>Expert certifié Google Business Profile — France & Canada</span>
+      <span class="mw-f-top-social">
+        <a href="https://wa.me/14503904889" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+      </span>
+    </div>
+  </div>
+  <div class="mw-f-main">
+    <div class="mw-container mw-f-grid">
+      <div class="mw-f-col">
+        <h4>À propos de MapsWeb</h4>
+        <p style="font-size:.875rem;color:#5f6368;line-height:1.7">Agence spécialisée dans l'optimisation Google Business Profile, la récupération de fiches suspendues et le SEO local.</p>
+        <ul>
+          <li><a href="pages/a-propos.html">Qui sommes-nous ?</a></li>
+          <li><a href="pages/verified.html">Programme MapsWeb Verified</a></li>
+          <li><a href="pages/contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="mw-f-col">
+        <h4>Produits & Services</h4>
+        <div class="mw-f-col-split">
+          <ul>
+            <li><a href="pages/services.html#verification">Vérification fiche Google</a></li>
+            <li><a href="pages/services.html#suspendue">Réactiver fiche suspendue</a></li>
+            <li><a href="pages/services.html#seo">Optimisation SEO local</a></li>
+            <li><a href="pages/services.html#site">Création de site web</a></li>
+          </ul>
+          <ul>
+            <li><a href="pages/verified.html">MapsWeb Verified</a></li>
+            <li><a href="pages/tarifs.html">Tous les forfaits</a></li>
+            <li><a href="pages/faq.html">FAQ</a></li>
+            <li><a href="pages/contact.html">Support</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="mw-f-col">
+        <h4>Contact</h4>
+        <div class="contact-list">
+          <a href="tel:+14503904889"><i class="fa-solid fa-phone"></i> +14503904889</a>
+<a href="mailto:mapswebltd@gmail.com"><i class="fa-solid fa-envelope"></i> mapswebltd@gmail.com</a>
+          <a href="#"><i class="fa-solid fa-location-dot"></i> France · Canada</a>
+          <a href="https://wa.me/14503904889" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="mw-f-bottom">
+    <div class="mw-container mw-f-bottom-row">
+      <div class="mw-f-brand">
+        <img src="img/mapsweb-logo-google.png" alt="MapsWeb">
+        <p>© 2026 MapsWeb — Tous droits réservés</p>
+      </div>
+      <div class="mw-f-links">
+        <a href="#">Confidentialité</a>
+        <a href="#">Conditions</a>
+        <a href="#">Mentions légales</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/mapsweb.js" defer></script>
+<script>
+document.addEventListener('DOMContentLoaded',function(){
+  var b=document.getElementById('mw-burger'),n=document.querySelector('.mw-nav');
+  if(b&&n)b.addEventListener('click',function(){var o=n.classList.toggle('open');b.classList.toggle('open',o);});
+});
+</script>
+<button id="mw-back-to-top" class="mw-back-to-top" aria-label="Retour en haut"><i class="fa-solid fa-chevron-up"></i></button>
+</body>
+</html>
