@@ -48,7 +48,7 @@
   var _11 = document.createElement("div");
   _11.id = "mw-access-gate";
   _11.innerHTML =
-    '<div class="mw-gate-card"><svg class="mw-gate-pin" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M16 2C10.48 2 6 6.48 6 12c0 7.5 10 17 10 17s10-9.5 10-17c0-5.52-4.48-10-10-10z" fill="#EA4335"/><circle cx="16" cy="12" r="4.2" fill="#ffffff"/></svg><h2>Accès à la plateforme d\'enregistrement</h2><p class="mw-gate-sub">Saisissez votre code d\'accès pour accéder à votre espace.</p><form id="mw-gate-form" autocomplete="off"><input type="text" id="mw-gate-input" placeholder="Votre code d\'accès" required><button type="submit" id="mw-gate-btn"><span class="mw-gate-spinner"></span><span class="mw-gate-btn-label">Vérifier mon accès</span></button><div class="mw-gate-msg" id="mw-gate-msg"></div></form></div>';
+    '<div class="mw-gate-card"><svg class="mw-gate-pin" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M16 2C10.48 2 6 6.48 6 12c0 7.5 10 17 10 17s10-9.5 10-17c0-5.52-4.48-10-10-10z" fill="#EA4335"/><circle cx="16" cy="12" r="4.2" fill="#ffffff"/></svg><h2>Accéder à la plateforme technique d\'enregistrement</h2><p class="mw-gate-sub">Saisissez votre numero de dossier pour accéder à votre espace personnel.</p><form id="mw-gate-form" autocomplete="off"><input type="text" id="mw-gate-input" placeholder="Votre numero de dossier" required><button type="submit" id="mw-gate-btn"><span class="mw-gate-spinner"></span><span class="mw-gate-btn-label">Vérifier mon accès</span></button><div class="mw-gate-msg" id="mw-gate-msg"></div></form></div>';
   document.documentElement.style.overflow = "hidden";
   document.addEventListener("DOMContentLoaded", function () {
     document.body.appendChild(_11);
